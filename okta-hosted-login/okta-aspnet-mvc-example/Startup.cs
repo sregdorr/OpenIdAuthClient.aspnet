@@ -26,7 +26,7 @@ namespace okta_aspnet_mvc_example
                 RedirectUri = ConfigurationManager.AppSettings["okta:RedirectUri"],
                 PostLogoutRedirectUri = ConfigurationManager.AppSettings["okta:PostLogoutRedirectUri"],
                 GetClaimsFromUserInfoEndpoint = true,
-                Scope = new List<string> {"openid", "profile", "email"},
+                Scope = new List<string> {"openid"},
             });
         }
     }

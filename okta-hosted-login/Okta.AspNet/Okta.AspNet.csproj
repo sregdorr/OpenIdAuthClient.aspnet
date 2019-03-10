@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Official Okta middleware for ASP.NET 4.5+. Easily add authentication and authorization to ASP.NET applications.</Description>
+    <Copyright>(c) 2018 Okta, Inc.</Copyright>
+    <VersionPrefix>1.1.4</VersionPrefix>
+    <Authors>Okta, Inc.</Authors>
+    <TargetFramework>net452</TargetFramework>
+    <AssemblyName>Okta.AspNet</AssemblyName>
+    <PackageId>Okta.AspNet</PackageId>
+    <PackageTags>okta,token,authentication,authorization</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/okta/okta-sdk-dotnet/master/icon.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/okta/okta-aspnet</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/okta/okta-aspnet/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/okta/okta-aspnet</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AsyncUsageAnalyzers" Version="1.0.0-alpha003" PrivateAssets="All" />
+    <PackageReference Include="IdentityModel" Version="3.10.5" />
+    <PackageReference Include="Microsoft.Owin.Security" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Owin.Security.Jwt" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Owin.Security.OpenIdConnect" Version="4.0.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta008" PrivateAssets="All" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Okta.AspNet.Abstractions\Okta.AspNet.Abstractions.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\OktaSdk.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+</Project>
